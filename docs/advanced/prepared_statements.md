@@ -15,7 +15,7 @@ Preparing Prepared Statements in cypher is an extension of Postgres' stored proc
 
 
 ```postgresql
-PREPARE cypher_stored_procedure(agtype) AS
+PREPARE cypher_prepared_statement(agtype) AS
 SELECT *
 FROM cypher('expr', $$
     MATCH (v:Person) 
